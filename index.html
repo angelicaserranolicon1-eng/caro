@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bailarín Profesional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#111;color:white;scroll-behavior:smooth;}
+
+    nav{
+      position:fixed;top:0;left:0;width:100%;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:15px 30px;background:rgba(0,0,0,0.8);
+      backdrop-filter:blur(5px);z-index:1000;
+    }
+    nav a{color:white;text-decoration:none;margin:0 10px;font-weight:600;}
+    nav a:hover{color:#FFD700;}
+
+    /* HERO CON VIDEO */
+    .hero{
+      position:relative;width:100%;height:100vh;overflow:hidden;
+      display:flex;justify-content:center;align-items:center;text-align:center;
+    }
+    .hero video{
+      position:absolute;top:0;left:0;width:100%;height:100%;
+      object-fit:cover;filter:brightness(0.5);
+    }
+    .hero .content{
+      position:relative;z-index:2;color:white;padding:20px;
+    }
+    .hero h1{font-size:55px;font-weight:800;text-shadow:0 0 10px black;}
+    .hero p{font-size:22px;margin-top:10px;}
+
+    section{padding:60px 20px;text-align:center;}
+
+    .about{max-width:900px;margin:auto;font-size:18px;line-height:1.8;}
+
+    .btn{
+      display:inline-block;margin-top:20px;padding:12px 30px;
+      background:#FFD700;color:black;font-weight:600;border-radius:30px;
+      text-decoration:none;transition:0.3s;
+    }
+    .btn:hover{background:white;}
+
+    .gallery{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:15px;padding:20px;
+    }
+    .gallery img{width:100%;border-radius:10px;}
+
+    /* VIDEOS */
+    .videos{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:20px;
+      padding:20px;
+      justify-items:center;
+    }
+    iframe{
+      width:100%;
+      height:200px;
+      border-radius:10px;
+      border:none;
+    }
+
+    footer{
+      background:#000;padding:40px 20px;text-align:center;
+    }
+    .social a{
+      color:#FFD700;margin:0 10px;text-decoration:none;font-weight:600;
+    }
+    .social a:hover{text-decoration:underline;}
+  </style>
+</head>
+<body>
+
+  <!-- MENU -->
+  <nav>
+    <div><strong>BAILARÍN</strong></div>
+    <div>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#galeria">Galería</a>
+      <a href="#videos">Videos</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- HERO CON VIDEO -->
+  <section id="inicio" class="hero">
+    <video autoplay muted loop>
+      <!-- Puedes cambiar este video por uno tuyo -->
+      <source src="solo.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <h1>Carolina Granados</h1>
+      <p>Pasión • Arte • Movimiento</p>
+      <a href="#sobre" class="btn">Conóceme</a>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre">
+    <h2>Sobre mí</h2>
+    <p class="about">
+      Soy una bailarina con 13 años de experiencia en estilos como jazz, hip hop, acrobacia y baile aéreo. He pisado más de 34 veces 
+      un escenario y con ello he llegado a varias competencias. Cada movimiento es una historia, cada paso una emoción. 
+      Mi objetivo es llegar más lejos, enseñar y demostrarle al mundo mi pasión por el baile
+    </p>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="solo2.jpg" alt="Danza 1">
+      <img src="solo3.jpg" alt="Danza 2">
+      <img src="solo5.jpg" alt="Danza 3">
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <footer id="contacto">
+    <p>📩 Contáctame: bailarín@gmail.com</p>
+    <div class="social">
+      <p>Sígueme:</p>
+      <a href="https://www.instagram.com/carolinagh012?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+    </div>
+    <p>© 2025 Carolina Granados - Arte en Movimiento</p>
+  </footer>
+
+</body>
+</html>
